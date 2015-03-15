@@ -1,0 +1,82 @@
+/*
+title:   Super Simple CSS Grid
+author:  Kaela Nichols
+date:    2/15/2015
+codepen: http://codepen.io/kaela/pen/raQLKv
+*/
+
+.parent {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+article[role="main"] {
+  float: left;
+  margin-right: 2%;
+  width: 66%;
+}
+
+aside[role="complimentary"] {
+  display: inline-block;
+  width: 32%;
+}
+
+.bi {
+  width: 49%;
+}
+
+.bi:first-child {
+  float: left;
+  margin-right: 2%;
+}
+
+.bi:last-child {
+  float: right;
+}
+
+.tri {
+  float: left;
+  width: 32%;
+}
+
+.tri:not(:first-child):not(:last-child) {
+  margin: 0 2%;
+}
+
+
+/* Styles for display purposes */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #aadddd;
+  padding: 30px;
+}
+
+html, div, p, section {
+  margin: 0;
+  padding: 0;
+}
+
+.bi, .tri, article, aside {
+  padding: 15px;
+}
+
+.bi {
+  background: #ee2e2e;
+}
+
+.tri {
+  background: #ffffff;
+}
+
+article, aside {
+  background: #fffaaa;
+}
+article:not(:first-of-type), aside:not(:first-of-type) {
+  margin-top: 15px;
+}
